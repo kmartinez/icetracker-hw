@@ -1,7 +1,7 @@
 # GDP Glacier Monitor
 
 ## Name
-GDP Glacier Monitor - Hardware
+GDP Glacier Monitor - Hardware - part of the glacsweb.org project at The University of Southampton
 
 ## File Info
 ```
@@ -44,15 +44,13 @@ Instead VCC_1 was set to 4V by changing R8 to 120k and two 470uF capacitors were
 ### Changes for V2
 * V_GSM is now redundant as is being powered through 4V supply
 * LDO is not being used to can be removed
-* PSU can be combined with MCU board to create a single PCB?
+
 
 # GlacTrackerMCU
 This is the the "MCU" board with the MCU, GPS, Radio, GSM & SWARM.
 
 The hardware is the same for a base station and rover, however the GSM & SWARM modules are not fitted on the rovers.
 
-### GlacTrackerMCU_V1
-This board was designed and meant to be sent for manufacture however the wrong Gerbers were sent meaning the board never came
 
 ### GlacTrackerMCU_V2
 Contains minor changes from V1 that were discovered after V1 had been "ordered":
