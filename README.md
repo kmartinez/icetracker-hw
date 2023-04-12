@@ -19,7 +19,13 @@ GDP Glacier Monitor - Hardware - part of the glacsweb.org project at The Univers
 ├── GlacTrackerMCU_V2
 │   ├── GlacTracker.brd - EAGLE board file
 │   ├── GlacTracker.sch - EAGLE schematic file
+├── GlacTracker7 - an Eagle7 respin of the separate PSU and MCU boards into a single board
+│   ├── tracker.brd - EAGLE board file
+│   ├── tracker.sch - EAGLE schematic file
 ```
+
+### GlacTracker7
+TBD
 
 ## GlacTracker_PSU
 GlacTracker_PSU designed first to provide 3 configurable supplies through the MP2155 switching regulators. As well as a connection to the "battery" (the output of the BQ24074 Li-Ion battery Charger)
