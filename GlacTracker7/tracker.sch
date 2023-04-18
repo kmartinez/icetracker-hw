@@ -11440,18 +11440,18 @@ Metric Code Size 5664</description>
 <segment>
 <label x="40.64" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="GPIO3"/>
-<wire x1="40.64" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="142.24" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="144.78" x2="60.96" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="142.24" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="144.78" x2="60.96" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RADIO_RX" class="0">
 <segment>
 <label x="40.64" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="GPIO2"/>
-<wire x1="40.64" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="137.16" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="142.24" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="137.16" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="142.24" x2="60.96" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -11694,9 +11694,9 @@ Metric Code Size 5664</description>
 <segment>
 <label x="40.64" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="GPIO1"/>
-<wire x1="40.64" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="132.08" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="132.08" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GSM_KEY" class="0">
@@ -11747,9 +11747,9 @@ Metric Code Size 5664</description>
 <segment>
 <label x="40.64" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="GPIO0"/>
-<wire x1="40.64" y1="127" x2="53.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="127" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="127" x2="58.42" y2="127" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="127" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -12845,9 +12845,9 @@ connect 10k across</text>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="99.06" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="96.52" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
-<junction x="220.98" y="96.52"/>
-<wire x1="220.98" y1="93.98" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="96.52" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
+<junction x="205.74" y="96.52"/>
+<junction x="213.36" y="96.52"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -13020,6 +13020,55 @@ connect 10k across</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,2,162.56,88.9,VCC_1,4.4V,,,,"/>
+<approved hash="102,2,162.56,154.94,VCC_1,4.4V,,,,"/>
+<approved hash="102,3,132.08,55.88,VCC_1,4.4V,,,,"/>
+<approved hash="102,4,111.76,27.94,VCC_1,4.4V,,,,"/>
+<approved hash="104,3,66.04,111.76,U3,EP,GND,,,"/>
+<approved hash="104,3,43.18,144.78,U3,VCC,V_SYS,,,"/>
+<approved hash="104,3,43.18,149.86,U3,VIN,V_SYS,,,"/>
+<approved hash="104,3,58.42,111.76,U3,PGND,GND,,,"/>
+<approved hash="104,3,88.9,144.78,U3,VOUT,3.3V,,,"/>
+<approved hash="104,3,66.04,17.78,U6,EP,GND,,,"/>
+<approved hash="104,3,43.18,50.8,U6,VCC,V_SYS,,,"/>
+<approved hash="104,3,43.18,55.88,U6,VIN,V_SYS,,,"/>
+<approved hash="104,3,58.42,17.78,U6,PGND,GND,,,"/>
+<approved hash="104,3,88.9,50.8,U6,VOUT,4.4V,,,"/>
+<approved hash="104,2,48.26,162.56,XB1,VCC,V_GPS,,,"/>
+<approved hash="202,2,48.26,160.02,XB1,!RESET,,,,"/>
+<approved hash="202,2,48.26,111.76,XB1,VREF,,,,"/>
+<approved hash="104,1,187.96,149.86,U7,VCC,3.3V,,,"/>
+<approved hash="104,1,187.96,147.32,U7,VBAT,RTC_BAT,,,"/>
+<approved hash="103,1,187.96,134.62,U7,N.C._2,GND,,,"/>
+<approved hash="103,1,187.96,132.08,U7,N.C._3,GND,,,"/>
+<approved hash="103,1,187.96,129.54,U7,N.C._4,GND,,,"/>
+<approved hash="103,1,187.96,127,U7,N.C._5,GND,,,"/>
+<approved hash="103,1,187.96,124.46,U7,N.C._6,GND,,,"/>
+<approved hash="103,1,187.96,121.92,U7,N.C._7,GND,,,"/>
+<approved hash="103,1,187.96,119.38,U7,N.C._8,GND,,,"/>
+<approved hash="103,1,187.96,116.84,U7,N.C.,GND,,,"/>
+<approved hash="104,4,27.94,30.48,BAT,+,V_BATT,,,"/>
+<approved hash="104,4,27.94,25.4,BAT,-,GND,,,"/>
+<approved hash="106,1,223.52,149.86,N$32,,,,,"/>
+<approved hash="106,1,187.96,139.7,N$52,,,,,"/>
+<approved hash="106,1,60.96,137.16,SPARE,,,,,"/>
+<approved hash="106,1,86.36,137.16,SPARE2,,,,,"/>
+<approved hash="106,1,86.36,134.62,SPARE3,,,,,"/>
+<approved hash="115,1,130.071,89.431,FRAME2,,,,,"/>
+<approved hash="115,2,20.6417,41.91,3.3V,,,,,"/>
+<approved hash="115,2,51.1217,41.91,4.4V,,,,,"/>
+<approved hash="115,3,130.071,89.431,FRAME3,,,,,"/>
+<approved hash="115,4,130.071,89.431,FRAME4,,,,,"/>
+<approved hash="115,4,66.3617,148.59,LED4,,,,,"/>
+<approved hash="115,4,76.5217,148.59,LED5,,,,,"/>
+<approved hash="115,3,189.099,60.96,JP3,,,,,"/>
+<approved hash="115,3,191.639,134.62,JP2,,,,,"/>
+<approved hash="115,2,35.8817,41.91,GPS,,,,,"/>
+<approved hash="115,2,66.3617,41.91,GSM,,,,,"/>
+<approved hash="115,2,41.7788,22.86,LED_EN,,,,,"/>
+<approved hash="115,1,232.279,86.36,JP1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
