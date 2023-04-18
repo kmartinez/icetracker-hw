@@ -11577,16 +11577,16 @@ Metric Code Size 5664</description>
 </net>
 <net name="SD_CS" class="0">
 <segment>
-<label x="109.22" y="137.16" size="1.778" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="A5"/>
-<wire x1="86.36" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="142.24" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="137.16" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <label x="55.88" y="78.74" size="1.778" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="CS"/>
 <wire x1="50.8" y1="78.74" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="109.22" y="132.08" size="1.778" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="A4"/>
+<wire x1="86.36" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="139.7" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPS_EN" class="0">
@@ -11683,11 +11683,11 @@ Metric Code Size 5664</description>
 </net>
 <net name="COMMS_RX" class="0">
 <segment>
-<label x="40.64" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="GPIO0"/>
-<wire x1="40.64" y1="127" x2="53.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="127" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
+<label x="109.22" y="137.16" size="1.778" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="A5"/>
+<wire x1="86.36" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="142.24" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="137.16" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COMMS_EN" class="0">
@@ -11717,15 +11717,6 @@ Metric Code Size 5664</description>
 <wire x1="96.52" y1="116.84" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SPARE" class="0">
-<segment>
-<label x="109.22" y="132.08" size="1.778" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="A4"/>
-<wire x1="86.36" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="139.7" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SPARE2" class="0">
 <segment>
 <label x="109.22" y="127" size="1.778" layer="95" xref="yes"/>
@@ -11750,6 +11741,15 @@ Metric Code Size 5664</description>
 <wire x1="233.68" y1="93.98" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="96.52" x2="248.92" y2="96.52" width="0.1524" layer="91"/>
 <label x="238.76" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPARE" class="0">
+<segment>
+<label x="40.64" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="GPIO0"/>
+<wire x1="40.64" y1="127" x2="53.34" y2="127" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="127" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
