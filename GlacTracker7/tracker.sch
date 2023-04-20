@@ -11283,6 +11283,12 @@ Metric Code Size 5664</description>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R26" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="DNP"/>
+<part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
+<part name="GND27" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="JP5" library="jumper" deviceset="JP1Q" device=""/>
+<part name="R28" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND38" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11393,6 +11399,20 @@ Metric Code Size 5664</description>
 <attribute name="NAME" x="128.016" y="66.04" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="131.064" y="66.04" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
+<instance part="JP5" gate="A" x="220.98" y="58.42" smashed="yes">
+<attribute name="NAME" x="218.44" y="53.34" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="225.425" y="53.34" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R28" gate="G$1" x="220.98" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="219.456" y="40.64" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="222.504" y="40.64" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="220.98" y="71.12" smashed="yes">
+<attribute name="VALUE" x="220.98" y="73.914" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND38" gate="1" x="220.98" y="27.94" smashed="yes">
+<attribute name="VALUE" x="220.98" y="27.686" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11453,6 +11473,11 @@ Metric Code Size 5664</description>
 <wire x1="22.86" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <wire x1="17.78" y1="88.9" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="A" pin="2"/>
+<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
+<wire x1="220.98" y1="66.04" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11541,6 +11566,11 @@ Metric Code Size 5664</description>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="180.34" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="45.72" x2="182.88" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND38" gate="1" pin="GND"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="30.48" x2="220.98" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RADIO_TX" class="0">
@@ -11830,15 +11860,6 @@ Metric Code Size 5664</description>
 <wire x1="55.88" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GSM_KEY" class="0">
-<segment>
-<label x="40.64" y="157.48" size="1.778" layer="95" rot="MR0" xref="yes"/>
-<wire x1="53.34" y1="152.4" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GPIO6"/>
-<wire x1="60.96" y1="152.4" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="BATV_EN" class="0">
 <segment>
 <label x="109.22" y="116.84" size="1.778" layer="95" xref="yes"/>
@@ -11857,13 +11878,22 @@ Metric Code Size 5664</description>
 <wire x1="101.6" y1="137.16" x2="101.6" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SPARE3" class="0">
+<net name="ADMIN" class="0">
 <segment>
 <wire x1="99.06" y1="121.92" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
 <label x="109.22" y="121.92" size="1.778" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="A2"/>
 <wire x1="86.36" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="134.62" x2="99.06" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="220.98" y1="48.26" x2="231.14" y2="48.26" width="0.1524" layer="91"/>
+<label x="231.14" y="48.26" size="1.778" layer="95" xref="yes"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="JP5" gate="A" pin="1"/>
+<wire x1="220.98" y1="45.72" x2="220.98" y2="48.26" width="0.1524" layer="91"/>
+<junction x="220.98" y="48.26"/>
+<wire x1="220.98" y1="48.26" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_SYS" class="0">
@@ -11892,6 +11922,15 @@ Metric Code Size 5664</description>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <junction x="129.54" y="55.88"/>
+</segment>
+</net>
+<net name="SPARE1" class="0">
+<segment>
+<label x="40.64" y="157.48" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<wire x1="53.34" y1="152.4" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GPIO6"/>
+<wire x1="60.96" y1="152.4" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11932,8 +11971,8 @@ Metric Code Size 5664</description>
 <attribute name="VALUE" x="71.12" y="157.48" size="1.778" layer="96"/>
 </instance>
 <instance part="XB1" gate="G$1" x="33.02" y="137.16" rot="MR0"/>
-<instance part="GND7" gate="1" x="154.94" y="58.42" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="154.94" y="58.166" size="1.778" layer="96" rot="MR0" align="top-center"/>
+<instance part="GND7" gate="1" x="154.94" y="53.34" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="154.94" y="53.086" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="U2" gate="G$1" x="182.88" y="71.12" smashed="yes">
 <attribute name="NAME" x="170.18" y="89.154" size="1.778" layer="95" font="vector"/>
@@ -11998,6 +12037,12 @@ Metric Code Size 5664</description>
 <attribute name="NAME" x="40.64" y="17.78" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="47.625" y="17.78" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="JP4" gate="G$1" x="203.2" y="63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="205.74" y="66.04" size="1.778" layer="95" font="vector" rot="R270"/>
+</instance>
+<instance part="GND27" gate="1" x="203.2" y="53.34" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="203.2" y="53.086" size="1.778" layer="96" rot="MR0" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12030,7 +12075,7 @@ Metric Code Size 5664</description>
 <wire x1="165.1" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="157.48" y1="63.5" x2="154.94" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="63.5" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="63.5" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="-"/>
 <wire x1="165.1" y1="66.294" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
 <junction x="165.1" y="63.5"/>
@@ -12042,6 +12087,11 @@ Metric Code Size 5664</description>
 <pinref part="LED_EN" gate="A" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="43.18" y1="15.24" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND27" gate="1" pin="GND"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="55.88" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RADIO_TX" class="0">
@@ -12090,7 +12140,11 @@ Metric Code Size 5664</description>
 <segment>
 <label x="215.9" y="83.82" size="1.778" layer="95" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="KEY"/>
-<wire x1="200.66" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="68.58" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
+<junction x="203.2" y="83.82"/>
 </segment>
 </net>
 <net name="GSM_RST" class="0">
