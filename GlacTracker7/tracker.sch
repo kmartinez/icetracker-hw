@@ -11528,8 +11528,8 @@ Metric Code Size 5664</description>
 <part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="JP2" library="jumper" deviceset="JP1Q" device=""/>
 <part name="Q6" library="transistor-pnp" deviceset="MMBT3906*" device="SMD" technology="LT1"/>
-<part name="R24" library="resistor" deviceset="R-EU_" device="R0805" value="200R 0.1%"/>
-<part name="R25" library="resistor" deviceset="R-EU_" device="R0805" value="1K 0.1%"/>
+<part name="R24" library="resistor" deviceset="R-EU_" device="R0805" value="680K 0.1%"/>
+<part name="R25" library="resistor" deviceset="R-EU_" device="R0805" value="330K 0.1%"/>
 <part name="C21" library="resistor" deviceset="C-EU" device="C0805" value="1uF"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="Q7" library="farnell-parts" deviceset="DMG6602SVT" device=""/>

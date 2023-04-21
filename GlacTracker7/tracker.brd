@@ -8197,11 +8197,11 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="49.022" y="8.636" size="0.889" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="45.847" y="13.081" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R24" library="resistor" package="R0805" value="200R 0.1%" x="117.094" y="20.066" smashed="yes">
+<element name="R24" library="resistor" package="R0805" value="680K 0.1%" x="117.094" y="20.066" smashed="yes">
 <attribute name="NAME" x="117.094" y="19.05" size="0.889" layer="25" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="116.332" y="17.78" size="1.27" layer="27"/>
 </element>
-<element name="R25" library="resistor" package="R0805" value="1K 0.1%" x="117.094" y="16.764" smashed="yes" rot="R180">
+<element name="R25" library="resistor" package="R0805" value="330K 0.1%" x="117.094" y="16.764" smashed="yes" rot="R180">
 <attribute name="NAME" x="117.094" y="15.748" size="0.889" layer="25" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="117.856" y="19.05" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -9777,16 +9777,16 @@ Please make sure your boards conform to these design rules.
 <approved hash="19,1,bc3cc008bd07c133"/>
 <approved hash="19,1,f95369f16f0b86a1"/>
 <approved hash="6,1,940bae6638a47eb7"/>
-<approved hash="19,1,f89406e433eee861"/>
-<approved hash="19,1,5b55a5de0b24d050"/>
-<approved hash="5,1,86115329860542c0"/>
-<approved hash="19,1,c68c07c60c98e82d"/>
 <approved hash="19,1,31f585832d47cbb9"/>
 <approved hash="19,1,a83419ec9c7b3c5e"/>
-<approved hash="19,1,8a3eb602880fb433"/>
-<approved hash="19,1,8a72b64eb6178a2b"/>
+<approved hash="19,1,c68c07c60c98e82d"/>
+<approved hash="19,1,5b55a5de0b24d050"/>
+<approved hash="5,1,86115329860542c0"/>
+<approved hash="19,1,f89406e433eee861"/>
 <approved hash="19,1,bd03668e3aa144d1"/>
 <approved hash="19,1,8a76b64ab0778c4b"/>
+<approved hash="19,1,8a72b64eb6178a2b"/>
+<approved hash="19,1,8a3eb602880fb433"/>
 <approved hash="19,1,37d222e6220d3739"/>
 <approved hash="19,1,33122626250f303b"/>
 <approved hash="19,1,3d1e1e2a1d013e35"/>
