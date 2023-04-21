@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,12 +28,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -275,7 +275,7 @@
 <text x="104.648" y="22.352" size="0.889" layer="51" rot="R90">!CHG</text>
 <text x="94.488" y="6.858" size="2.032" layer="25" align="bottom-center">+</text>
 <text x="113.03" y="12.7" size="2.032" layer="25" align="bottom-center">+</text>
-<text x="74.422" y="3.048" size="2.54" layer="21" ratio="15" rot="R90">3.3V</text>
+<text x="74.422" y="3.556" size="2.54" layer="21" ratio="15" rot="R90">3.3V</text>
 <text x="11.938" y="4.572" size="2.54" layer="21" ratio="15" rot="R90">4.4V</text>
 <wire x1="44.45" y1="87.776" x2="44.45" y2="87.63" width="0" layer="20"/>
 <wire x1="44.45" y1="76.454" x2="44.45" y2="69.85" width="0" layer="20"/>
@@ -405,7 +405,7 @@ SWARM</text>
 <rectangle x1="80.137" y1="2.794" x2="80.391" y2="10.922" layer="41"/>
 <text x="98.242" y="28.896" size="4.5" layer="25" font="vector" ratio="15">IT3</text>
 <text x="98.242" y="25.848" size="2.54" layer="25" font="vector" ratio="15">V1.0</text>
-<text x="115.366" y="20.749" size="2.1844" layer="22" font="fixed" rot="MR0">Graeme Bragg
+<text x="120.221" y="37.388" size="2.1844" layer="22" font="fixed" rot="MR270">Graeme Bragg
 Kirk Martinez
 Sherif Attia
 ECS
@@ -5747,6 +5747,15 @@ Southampton</text>
 <rectangle x1="85.725" y1="24.937721875" x2="86.70035625" y2="24.947878125" layer="21"/>
 <rectangle x1="85.897721875" y1="24.94788125" x2="86.537796875" y2="24.9580375" layer="21"/>
 <text x="72.908" y="33.056" size="2.032" layer="21" ratio="15" rot="R90" align="center-left">ADMIN</text>
+<text x="70.556" y="0.702" size="1.9304" layer="25" font="vector" ratio="15">glacsweb.org</text>
+<text x="74.355" y="67.381" size="1.9304" layer="25" font="vector" ratio="15" rot="R90">glacsweb.org</text>
+<text x="82.217" y="1.982" size="2.1844" layer="22" font="fixed" rot="MR90">I am a piece of 
+scientific equipment 
+for glacier monitoring.</text>
+<text x="51.483" y="0.712" size="2.1844" layer="22" font="fixed" rot="MR90">If you can read this, 
+I am broken. 
+Please visit:
+http://glacsweb.org</text>
 </plain>
 <libraries>
 <library name="GlacTracker">
@@ -7705,10 +7714,10 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="48.514" y="19.304" size="0.889" layer="25" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="47.244" y="13.081" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R1" library="SparkFun-Resistors" package="0603" value="100k" x="58.166" y="16.51" smashed="yes" rot="R180">
-<attribute name="NAME" x="58.166" y="15.748" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value=" " x="58.166" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="58.166" y="17.272" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+<element name="R1" library="SparkFun-Resistors" package="0603" value="100k" x="58.674" y="16.51" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.674" y="15.748" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="PROD_ID" value=" " x="58.674" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="58.674" y="17.272" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="3.3V" library="led" package="CHIP-LED0805" value="" x="111.506" y="41.91" smashed="yes" rot="R270">
 <attribute name="NAME" x="109.728" y="41.91" size="0.889" layer="25" rot="R180" align="center-left"/>
@@ -8509,7 +8518,7 @@ Please make sure your boards conform to these design rules.
 <via x="114.3" y="5.08" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="106.68" y="5.08" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="91.44" y="7.62" extent="1-16" drill="0.4064" diameter="0.7112"/>
-<via x="88.9" y="1.27" extent="1-16" drill="0.4064" diameter="0.7112"/>
+<via x="89.027" y="1.397" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="60.96" y="72.39" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="60.96" y="62.23" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="60.96" y="41.91" extent="1-16" drill="0.4064" diameter="0.7112"/>
@@ -8522,13 +8531,13 @@ Please make sure your boards conform to these design rules.
 <via x="76.2" y="26.416" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="60.96" y="15.24" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="60.96" y="10.16" extent="1-16" drill="0.4064" diameter="0.7112"/>
-<via x="55.88" y="10.16" extent="1-16" drill="0.4064" diameter="0.7112"/>
+<via x="56.642" y="10.16" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="58.42" y="25.4" extent="1-16" drill="0.4064" diameter="0.7112"/>
-<via x="58.42" y="20.32" extent="1-16" drill="0.4064" diameter="0.7112"/>
+<via x="58.547" y="20.193" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="48.26" y="20.32" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="50.8" y="12.7" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="48.26" y="7.62" extent="1-16" drill="0.4064" diameter="0.7112"/>
-<via x="53.34" y="5.08" extent="1-16" drill="0.4064" diameter="0.7112"/>
+<via x="53.848" y="5.08" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="63.5" y="5.08" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="66.04" y="10.16" extent="1-16" drill="0.4064" diameter="0.7112"/>
 <via x="68.58" y="7.62" extent="1-16" drill="0.4064" diameter="0.7112"/>
@@ -8911,7 +8920,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="62.103" y1="21.209" x2="61.214" y2="20.32" width="0.3048" layer="1"/>
 <wire x1="61.214" y1="20.32" x2="61.214" y2="17.272" width="0.3048" layer="1"/>
 <wire x1="61.214" y1="17.272" x2="60.452" y2="16.51" width="0.3048" layer="1"/>
-<wire x1="60.452" y1="16.51" x2="59.016" y2="16.51" width="0.3048" layer="1"/>
+<wire x1="60.452" y1="16.51" x2="59.524" y2="16.51" width="0.3048" layer="1"/>
 </signal>
 <signal name="RTC_BAT">
 <contactref element="Q1" pad="3"/>
@@ -9641,16 +9650,16 @@ Please make sure your boards conform to these design rules.
 <contactref element="Q6" pad="B"/>
 <contactref element="R1" pad="2"/>
 <contactref element="Q1" pad="2"/>
-<wire x1="55.88" y1="16.256" x2="56.134" y2="16.51" width="0.3048" layer="16"/>
-<via x="56.134" y="16.51" extent="1-16" drill="0.4064"/>
-<wire x1="56.134" y1="16.51" x2="57.316" y2="16.51" width="0.3048" layer="1"/>
+<wire x1="56.388" y1="16.256" x2="56.642" y2="16.51" width="0.3048" layer="16"/>
+<via x="56.642" y="16.51" extent="1-16" drill="0.4064"/>
+<wire x1="56.642" y1="16.51" x2="57.824" y2="16.51" width="0.3048" layer="1"/>
 <wire x1="50.419" y1="16.256" x2="48.26" y2="16.256" width="0.3048" layer="1"/>
 <wire x1="48.26" y1="16.256" x2="47.371" y2="15.367" width="0.3048" layer="1"/>
 <wire x1="47.371" y1="15.367" x2="47.371" y2="12.319" width="0.3048" layer="1"/>
 <wire x1="47.371" y1="12.319" x2="47.498" y2="12.192" width="0.3048" layer="1"/>
 <wire x1="47.498" y1="12.192" x2="47.856" y2="12.192" width="0.3048" layer="1"/>
 <wire x1="47.856" y1="12.192" x2="47.922" y2="12.126" width="0.3048" layer="1"/>
-<wire x1="55.88" y1="16.256" x2="50.419" y2="16.256" width="0.3048" layer="16"/>
+<wire x1="56.388" y1="16.256" x2="50.419" y2="16.256" width="0.3048" layer="16"/>
 </signal>
 <signal name="VCC_HP2_SW1">
 <contactref element="R25" pad="2"/>
