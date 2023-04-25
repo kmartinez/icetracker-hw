@@ -1220,14 +1220,14 @@ SD Card</text>
 <pad name="6" x="1.27" y="45.72" drill="1.016" diameter="1.8796"/>
 <pad name="7" x="1.27" y="48.26" drill="1.016" diameter="1.8796"/>
 <pad name="8" x="1.27" y="50.8" drill="1.016" diameter="1.8796"/>
-<text x="3.302" y="50.165" size="1.27" layer="21" rot="MR0" align="bottom-right">CH340 RXI</text>
-<text x="3.302" y="47.625" size="1.27" layer="22" rot="MR0" align="bottom-right">TXO</text>
-<text x="3.302" y="45.085" size="1.27" layer="22" rot="MR0" align="bottom-right">CH340 TXO</text>
-<text x="3.302" y="42.545" size="1.27" layer="22" rot="MR0" align="bottom-right">RXI</text>
-<text x="3.302" y="40.005" size="1.27" layer="22" rot="MR0" align="bottom-right">TX/!RX</text>
-<text x="3.302" y="37.465" size="1.27" layer="22" rot="MR0" align="bottom-right">GPIO1</text>
-<text x="3.302" y="34.925" size="1.27" layer="22" rot="MR0" align="bottom-right">VIN</text>
-<text x="3.302" y="32.385" size="1.27" layer="22" rot="MR0" align="bottom-right">GND</text>
+<text x="2.54" y="50.165" size="1.27" layer="22" rot="MR0" align="bottom-right">RX</text>
+<text x="2.54" y="47.625" size="1.27" layer="22" rot="MR0" align="bottom-right">TXO</text>
+<text x="2.54" y="45.085" size="1.27" layer="22" rot="MR0" align="bottom-right">TX</text>
+<text x="2.54" y="42.545" size="1.27" layer="22" rot="MR0" align="bottom-right">RXI</text>
+<text x="2.54" y="40.005" size="1.27" layer="22" rot="MR0" align="bottom-right">TX/!RX</text>
+<text x="2.54" y="37.465" size="1.27" layer="22" rot="MR0" align="bottom-right">GPIO1</text>
+<text x="2.54" y="34.925" size="1.27" layer="22" rot="MR0" align="bottom-right">VIN</text>
+<text x="2.54" y="32.385" size="1.27" layer="22" rot="MR0" align="bottom-right">GND</text>
 </package>
 </packages>
 <symbols>
@@ -11464,7 +11464,7 @@ Metric Code Size 5664</description>
 <part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value=" 820k">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="143k">
+<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="100k">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="750k">

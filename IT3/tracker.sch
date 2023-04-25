@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="63" fill="3" visible="no" active="no"/>
@@ -1219,14 +1219,14 @@ SD Card</text>
 <pad name="6" x="1.27" y="45.72" drill="1.016" diameter="1.8796"/>
 <pad name="7" x="1.27" y="48.26" drill="1.016" diameter="1.8796"/>
 <pad name="8" x="1.27" y="50.8" drill="1.016" diameter="1.8796"/>
-<text x="3.302" y="50.165" size="1.27" layer="21" rot="MR0" align="bottom-right">CH340 RXI</text>
-<text x="3.302" y="47.625" size="1.27" layer="22" rot="MR0" align="bottom-right">TXO</text>
-<text x="3.302" y="45.085" size="1.27" layer="22" rot="MR0" align="bottom-right">CH340 TXO</text>
-<text x="3.302" y="42.545" size="1.27" layer="22" rot="MR0" align="bottom-right">RXI</text>
-<text x="3.302" y="40.005" size="1.27" layer="22" rot="MR0" align="bottom-right">TX/!RX</text>
-<text x="3.302" y="37.465" size="1.27" layer="22" rot="MR0" align="bottom-right">GPIO1</text>
-<text x="3.302" y="34.925" size="1.27" layer="22" rot="MR0" align="bottom-right">VIN</text>
-<text x="3.302" y="32.385" size="1.27" layer="22" rot="MR0" align="bottom-right">GND</text>
+<text x="2.54" y="50.165" size="1.27" layer="22" rot="MR0" align="bottom-right">RX</text>
+<text x="2.54" y="47.625" size="1.27" layer="22" rot="MR0" align="bottom-right">TXO</text>
+<text x="2.54" y="45.085" size="1.27" layer="22" rot="MR0" align="bottom-right">TX</text>
+<text x="2.54" y="42.545" size="1.27" layer="22" rot="MR0" align="bottom-right">RXI</text>
+<text x="2.54" y="40.005" size="1.27" layer="22" rot="MR0" align="bottom-right">TX/!RX</text>
+<text x="2.54" y="37.465" size="1.27" layer="22" rot="MR0" align="bottom-right">GPIO1</text>
+<text x="2.54" y="34.925" size="1.27" layer="22" rot="MR0" align="bottom-right">VIN</text>
+<text x="2.54" y="32.385" size="1.27" layer="22" rot="MR0" align="bottom-right">GND</text>
 </package>
 </packages>
 <symbols>
