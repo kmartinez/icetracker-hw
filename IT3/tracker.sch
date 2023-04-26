@@ -6422,7 +6422,7 @@ Siemens, Philips, Valvo&lt;p&gt;
 <smd name="P$3" x="2.3" y="-1.9" dx="1" dy="0.7" layer="1" rot="R90"/>
 <text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.2" y="-4" size="1.27" layer="25">&gt;VALUE</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="51">*</text>
+<circle x="-0.508" y="-1.778" radius="0.127" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>

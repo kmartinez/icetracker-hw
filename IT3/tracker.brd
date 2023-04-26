@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -5758,6 +5758,18 @@ I am broken.
 Please visit:
 http://glacsweb.org
 or mail km@ecs.soton.ac.uk</text>
+<polygon width="0.1524" layer="42">
+<vertex x="13.97" y="11.684"/>
+<vertex x="21.59" y="11.684"/>
+<vertex x="21.59" y="4.064"/>
+<vertex x="13.97" y="4.064"/>
+</polygon>
+<polygon width="0.1524" layer="42">
+<vertex x="76.454" y="10.414"/>
+<vertex x="84.074" y="10.414"/>
+<vertex x="84.074" y="2.794"/>
+<vertex x="76.454" y="2.794"/>
+</polygon>
 </plain>
 <libraries>
 <library name="GlacTracker">
@@ -7196,7 +7208,7 @@ Siemens, Philips, Valvo&lt;p&gt;
 <smd name="P$3" x="2.3" y="-1.9" dx="1" dy="0.7" layer="1" rot="R90"/>
 <text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.2" y="-4" size="1.27" layer="25">&gt;VALUE</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="51">*</text>
+<circle x="-0.508" y="-1.778" radius="0.127" width="0.254" layer="21"/>
 </package>
 </packages>
 </library>
@@ -8220,7 +8232,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="VALUE" x="117.983" y="24.384" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="Q7" library="farnell-parts" package="TSOT26" value="DMG6602SVT" x="113.03" y="20.828" smashed="yes" rot="R270">
-<attribute name="NAME" x="111.03" y="21.32" size="1.27" layer="25"/>
+<attribute name="NAME" x="111.284" y="21.32" size="1.27" layer="25"/>
 </element>
 <element name="Q2" library="farnell-parts" package="TSOT26" value="DMG6602SVT" x="64.1858" y="51.054" smashed="yes">
 <attribute name="NAME" x="65.4878" y="52.054" size="0.889" layer="25" align="bottom-center"/>
@@ -8251,8 +8263,10 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="115.951" y="40.386" size="0.889" layer="25" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="120.777" y="37.846" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R22" library="SparkFun-Resistors" package="0603" value="100k" x="111.252" y="17.018">
+<element name="R22" library="SparkFun-Resistors" package="0603" value="100k" x="111.252" y="17.018" smashed="yes">
 <attribute name="PROD_ID" value=" " x="111.506" y="17.018" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="111.252" y="16.256" size="0.889" layer="25" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="111.252" y="16.256" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="JP1" library="jumper" package="JP1" value="" x="93.218" y="10.414" smashed="yes" rot="R270">
 <attribute name="NAME" x="93.218" y="11.938" size="0.889" layer="25" ratio="10" align="bottom-center"/>
@@ -9761,49 +9775,6 @@ Please make sure your boards conform to these design rules.
 <via x="33.528" y="86.3727" extent="1-16" drill="3.3147"/>
 </signal>
 </signals>
-<errors>
-<approved hash="6,1,56382900d300ac38"/>
-<approved hash="6,1,6f62d0f0e132a0a4"/>
-<approved hash="6,1,c76b5e6ba2663b66"/>
-<approved hash="6,1,ac2df1ad0dac502c"/>
-<approved hash="6,1,5800dd00a1022402"/>
-<approved hash="19,1,f2534cf34b00f1a0"/>
-<approved hash="19,1,b11c41284085b0b1"/>
-<approved hash="19,1,265350f3570425a4"/>
-<approved hash="19,1,46567c13a5fccf44"/>
-<approved hash="19,1,b388b481bd52eaa6"/>
-<approved hash="19,1,25d7fadc1e52e547"/>
-<approved hash="19,1,957bdd47dd8495b8"/>
-<approved hash="6,1,9fbc9c177c177fbc"/>
-<approved hash="19,1,089fe8abec080c3c"/>
-<approved hash="6,1,51f35c56dc56d1f3"/>
-<approved hash="6,1,fbd0fd362f4b2fab"/>
-<approved hash="6,1,25898e867289d986"/>
-<approved hash="6,1,b0cf73408f4f4cc0"/>
-<approved hash="6,1,c53002f0ff0cc73f"/>
-<approved hash="6,1,d9948074fc70a590"/>
-<approved hash="19,1,73518ff3f40771ad"/>
-<approved hash="19,1,bc3cc008bd07c133"/>
-<approved hash="19,1,f95369f16f0b86a1"/>
-<approved hash="6,1,940bae6638a47eb7"/>
-<approved hash="19,1,f89406e433eee861"/>
-<approved hash="19,1,5b55a5de0b24d050"/>
-<approved hash="5,1,86115329860542c0"/>
-<approved hash="19,1,a83419ec9c7b3c5e"/>
-<approved hash="19,1,c68c07c60c98e82d"/>
-<approved hash="19,1,31f585832d47cbb9"/>
-<approved hash="19,1,8a3eb602880fb433"/>
-<approved hash="19,1,8a76b64ab0778c4b"/>
-<approved hash="19,1,8a72b64eb6178a2b"/>
-<approved hash="19,1,bd03668e3aa144d1"/>
-<approved hash="19,1,33122626250f303b"/>
-<approved hash="19,1,37d222e6220d3739"/>
-<approved hash="19,1,39de1aea1a033937"/>
-<approved hash="19,1,3d1e1e2a1d013e35"/>
-<approved hash="6,16,c616c4edc4edc616"/>
-<approved hash="6,16,567e5740d740d67e"/>
-<approved hash="6,16,237d21c2a1c2a37d"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
