@@ -11460,10 +11460,10 @@ Metric Code Size 5664</description>
 <attribute name="TYPE" value="X7R"/>
 <attribute name="VOLTAGE_RATING" value="50V"/>
 </part>
-<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value=" 820k">
+<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value=" 845k">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
-<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="143k">
+<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="121k">
 <attribute name="TOLERANCE" value="1%"/>
 </part>
 <part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="750k">
