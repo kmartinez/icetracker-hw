@@ -24,8 +24,11 @@ GDP Glacier Monitor - Hardware - part of the glacsweb.org project at The Univers
 │   ├── tracker.sch - EAGLE schematic file
 ```
 
-### GlacTracker7
-TBD
+### GlacTracker3
+This is in IT3 (IceTracker3) and will be the second deployed system in Iceland in 2023.
+It has a simplified PSU: 3.3V and 4V with added FET switches to control power to various modules.
+The GSM and SWARM are swappable and only one can be installed (to avoid issues with UARTS and we only need one)
+It relies on several commercial boards: thing+, sparkfun ublox m9 GPS, sparkfun SWARM, Adafruit SD and Ardusimple's version of Xbee radio.
 
 ## GlacTracker_PSU
 GlacTracker_PSU designed first to provide 3 configurable supplies through the MP2155 switching regulators. As well as a connection to the "battery" (the output of the BQ24074 Li-Ion battery Charger)
