@@ -12098,9 +12098,14 @@ Metric Code Size 5664</description>
 <wire x1="182.88" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="129.54" y1="81.28" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="81.28" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 <label x="129.54" y="73.66" size="1.778" layer="95" rot="R90"/>
 <pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="!CS"/>
+<wire x1="129.54" y1="73.66" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="60.96" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<junction x="129.54" y="73.66"/>
 </segment>
 </net>
 <net name="N$2" class="0">
