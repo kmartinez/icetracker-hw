@@ -11558,6 +11558,7 @@ Metric Code Size 5664</description>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND38" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$2" library="GlacTracker" deviceset="SLOT130.5" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11682,6 +11683,9 @@ Metric Code Size 5664</description>
 <instance part="GND38" gate="1" x="220.98" y="27.94" smashed="yes">
 <attribute name="VALUE" x="220.98" y="27.686" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="SUPPLY6" gate="G$1" x="134.62" y="78.74" smashed="yes">
+<attribute name="VALUE" x="134.62" y="81.534" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11747,6 +11751,11 @@ Metric Code Size 5664</description>
 <pinref part="JP5" gate="A" pin="2"/>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 <wire x1="220.98" y1="66.04" x2="220.98" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="!CS"/>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
+<wire x1="134.62" y1="60.96" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -12083,14 +12092,9 @@ Metric Code Size 5664</description>
 <wire x1="182.88" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="129.54" y1="81.28" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="81.28" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 <label x="129.54" y="73.66" size="1.778" layer="95" rot="R90"/>
 <pinref part="R26" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="!CS"/>
-<wire x1="129.54" y1="73.66" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="60.96" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
-<junction x="129.54" y="73.66"/>
 </segment>
 </net>
 <net name="N$2" class="0">
